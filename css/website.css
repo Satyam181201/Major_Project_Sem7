@@ -1,0 +1,120 @@
+
+#container3D canvas {
+  width: 100vw !important;
+  height: 100vh !important;
+  position: absolute;
+  background-color: rgba(171, 29, 29, 0.25);
+  /* background-image: url(../img/bg1.jpg); */
+  /* background-color: rgba(0,0,0, 0.8); */
+  /* filter:blur(5px); */
+}
+
+header {
+  margin-top: 3em;
+  text-align: center;
+  color: white;
+}
+
+header h1 {
+  font-size: 2em;
+  font-weight: 900;
+}
+
+.modal-window {
+  position: fixed;
+  background-color: rgba(37, 36, 36, 0.25);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+
+  &:target {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  &>div {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20em;
+    background: white;
+  }
+
+  header {
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 150%;
+    margin: 0 0 15px;
+  }
+}
+
+.modal-close {
+  color: #aaa;
+  line-height: 50px;
+  font-size: 80%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 70px;
+  text-decoration: none;
+
+  &:hover {
+    color: black;
+  }
+}
+
+div.columns {
+  margin-top: 80px;
+}
+
+.container {
+  height: 100vh;
+}
+
+h1 {
+
+  width: 100%;
+  margin-top: 70px;
+  color: rgb(0, 0, 0) !important
+}
+
+div.columns {
+  margin-top: 20px;
+  /* background-color: black; */
+}
+
+.list-item {
+  color: black !important;
+  /* background-image: linear-gradient(rgb(86, 68, 132), rgb(151, 96, 154)); */
+  /* border-color: black; */
+  /* background-image: url(../img/bg.jpeg); */
+}
+
+.column.is-6 {
+  flex: none;
+  width: 50%;
+  border-color:black ;
+}
+
+
+
+.eye {
+  font-size: 20px;
+  cursor: pointer;
+  float: right;
+  color: black;
+  
+  /* transform: rotateX(150deg); */
+}
